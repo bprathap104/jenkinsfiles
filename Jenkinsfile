@@ -20,5 +20,11 @@ echo `pwd`'''
       }
     }
 
+    stage('archive') {
+      steps {
+        archiveArtifacts 'pipeline.log'
+      }
+    }
+
   }
 }
