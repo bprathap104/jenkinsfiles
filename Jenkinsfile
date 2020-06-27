@@ -16,7 +16,8 @@ pipeline {
     stage('deploy') {
       steps {
         sh '''#!/bin/bash
-echo `pwd`'''
+echo `pwd` > pipeline.log
+'''
       }
     }
 
