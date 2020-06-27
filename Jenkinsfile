@@ -13,5 +13,12 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh '''#!/bin/bash
+echo `pwd`'''
+      }
+    }
+
   }
 }
