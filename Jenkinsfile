@@ -17,7 +17,8 @@ pipeline {
       steps {
         sh '''#!/bin/bash
 echo `pwd` > pipeline.log
-'''
+echo `env`
+echo \'raising pull request\''''
       }
     }
 
